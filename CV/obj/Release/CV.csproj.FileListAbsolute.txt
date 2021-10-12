@@ -62,6 +62,7 @@ C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\bin\Microsoft.AI.Depe
 C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\bin\Microsoft.AI.Web.xml
-C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\obj\Release\CV.csprojResolveAssemblyReference.cache
 C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\obj\Release\CV.dll
 C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\obj\Release\CV.pdb
+C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\obj\Release\CV.csprojAssemblyReference.cache
+C:\Users\didie\Documents\Visual Studio 2017\Projects\CV\CV\obj\Release\CV.csproj.CopyComplete

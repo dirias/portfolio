@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Didier, Irias, Méndez, Didier Irias, Didier Méndez, Didier Irias Méndez, programador, Ingeniero de software"/>
-    <meta name="description" content="Didier Irias Méndez, desarrollador de software, apasionado por la tecnología."/>
-    <meta name="author" content="Didier Irias Méndez"/>
+    <meta name="keywords" content="Didier, Irias, Méndez, Didier Irias, Didier Méndez, Didier Irias Méndez, programador, Ingeniero de software" />
+    <meta name="description" content="Didier Irias Méndez, desarrollador de software, apasionado por la tecnología." />
+    <meta name="author" content="Didier Irias Méndez" />
+    <!--slide-->
+    <link rel="stylesheet" href="~/Content/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>@ViewBag.Title - Didier Irias Méndez</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -24,7 +27,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Estudios", "Studies", "Home")</li>
-                    <li>@Html.ActionLink("Proyectos", "Proyects", "Home")</li>
+                    <li>@Html.ActionLink("Proyectos", "Index", "Project")</li>
                     <li>@Html.ActionLink("Experiencia laboral", "Experience", "Home")</li>
                 </ul>
             </div>
@@ -41,5 +44,22 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        var app0 = angular.module('app0', []);
+        app0.controller('myCtrl0', function ($scope) {
+            $scope.showMe0 = false;
+            $scope.func0 = function () {
+                $scope.showMe0 = !$scope.showMe0;
+            }
+        });
+
+        var app = angular.module('app1', []);
+        app.controller('myCtrl1', function ($scope) {
+            $scope.showMe1 = false;
+            $scope.func1 = function () {
+                $scope.showMe1 = !$scope.showMe1;
+            }
+        });
+    </script>
 </body>
 </html>

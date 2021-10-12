@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CV.Models.Project>
+@{
+    ViewBag.Title = "Proyectos";
+}
+    <div >
+        <div>
+            <div class="">
+                <br />
+                <h3>@ViewBag.Message</h3>
+                <br />
+                @{int n = 0; string myFunc = "myFunc";}
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <ul class="thumbnails">
+                            <li class="span4 text-center" style="list-style:none;">
+                                <div class="thumbnail">
+                                    <img src="@Html.DisplayFor(x => item.Logo)" alt="">
+                                    <h3>@Html.DisplayFor(x => item.Name)</h3>
+                                    <p>@Html.DisplayFor(x => item.Description)</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                }
+                <!--
+    <div class="row">
+        <div class="col-md-4 text-center" ng-controller="myCtrl0" ng-app="app0">
+            <div class="btn-group">
+                <button ng-click="func0()" class="btn">Imagenes</button>
+                <img class="btn" src="~/Pictures/if_logo-github_298818.png" />
+            </div>
+            <div ng-show="showMe0">
+                <h1>Menu:</h1>
+                <div>Pizza</div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center" ng-controller="myCtrl1" ng-app="app1">
+            <div class="btn-group">
+                <button ng-click="func1()" class="btn">Imagenes</button>
+                <img class="btn" src="~/Pictures/if_logo-github_298818.png" />
+            </div>
+            <div ng-show="showMe1">
+                <h1>Menu:</h1>
+                <div>Pizza</div>
+            </div>
+        </div>
+    </div>-->
+
+            </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+

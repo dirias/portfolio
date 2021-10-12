@@ -34,13 +34,22 @@ textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     text-align: center;
-    color: red;
+}
+.pic {
+    display: block;
+    margin: auto
 }
 
-.pic:hover {
+.pic:hover{
     cursor:pointer;
 }
 
 .textogeneral {
     text-align:justify;
+}
+.textoModals {
+    color:black;
+}
+.colormensajemodal {
+    background-color:rgba(0, 0, 0, 0.60);
 }

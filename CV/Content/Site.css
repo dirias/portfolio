@@ -40,10 +40,16 @@ textarea {
     margin: auto
 }
 
-.pic:hover {
+.pic:hover{
     cursor:pointer;
 }
 
 .textogeneral {
     text-align:justify;
+}
+.textoModals {
+    color:black;
+}
+.colormensajemodal {
+    background-color:rgba(0, 0, 0, 0.60);
 }

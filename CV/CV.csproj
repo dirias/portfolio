@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,10 +142,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Education.cs" />
+    <Compile Include="Models\Experience.cs" />
+    <Compile Include="Models\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,28 +163,44 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Pictures\CENTRO CULTURAL DE IDIOMAS LOGO .jpg" />
+    <Content Include="Pictures\CNMLogo.png" />
     <Content Include="Pictures\cuatroEnLinea.PNG" />
-    <Content Include="Pictures\if_1-12_511567.png" />
+    <Content Include="Pictures\cuatroEnLinea2.PNG" />
+    <Content Include="Pictures\cuatroEnLinea3.PNG" />
+    <Content Include="Pictures\ShoppingCarLogo.png" />
     <Content Include="Pictures\if_33_Service_Portfolio_1688839.png" />
     <Content Include="Pictures\if_database_37021.png" />
     <Content Include="Pictures\if_gnome-mime-text-x-python_79607.png" />
     <Content Include="Pictures\if_kfouleggs_3407.png" />
+    <Content Include="Pictures\if_logo-github_298818.png" />
     <Content Include="Pictures\IMG-20180722-WA0006.jpg" />
+    <Content Include="Pictures\l1.png" />
+    <Content Include="Pictures\l2.png" />
+    <Content Include="Pictures\l3.png" />
     <Content Include="Pictures\LABRADOR LOGO.jpg" />
     <Content Include="Pictures\Logo-UH.jpg" />
     <Content Include="Pictures\LOGO.png" />
     <Content Include="Pictures\logoLugan21.png" />
     <Content Include="Pictures\Lugan21.png" />
     <Content Include="Pictures\Lugan21B.png" />
+    <Content Include="Pictures\OG1.png" />
+    <Content Include="Pictures\OG2.png" />
+    <Content Include="Pictures\OG3.png" />
+    <Content Include="Pictures\Pagina_en_construccion.jpg" />
+    <Content Include="Pictures\profile.jpg" />
     <Content Include="Pictures\S-O.PNG" />
+    <Content Include="Pictures\Sonos.jpg" />
+    <Content Include="Pictures\splunk.png" />
     <Content Include="Pictures\sykes-logo-sqblue.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\dd74fb3b-ec64-4f13-82c7-85f5a670686d - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\DidierIrias - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\DidierIrias - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\portafolioIrias - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -204,10 +227,13 @@
     <Content Include="Views\Home\Experience.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Studies.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Project\_PartialLujan21.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Education\" />
+    <Folder Include="Views\Experience\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
